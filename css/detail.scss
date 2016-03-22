@@ -1,0 +1,161 @@
+@import 'variable.scss';
+.goods_info{
+  margin-top: 20px;
+  width: 100%;
+  height:450px;
+  .goods_img_display{
+    width: 450px;
+    height: 450px;
+    border:1px solid $borderColor;
+    background: url("../images/goods_detail/goods_detail.png") no-repeat center center;
+    float: left;
+  }
+  .goods_info_text{
+    width: 600px;
+    float: right;
+    height: 452px;
+    //background: #0B9245;
+    .goods_info_money{
+      margin: 50px 0 50px;
+      color: $goodsColor;
+      .goods_info_price{
+        margin-left: 30px;
+        color: orange;
+      }
+    }
+    .goods_info_grade{
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: $goodsColor;
+      text-align: center;
+      border-top:1px solid $borderColor;
+      border-bottom:1px solid $borderColor;
+      span{
+        padding: 0 15px;
+        margin: 0 10px;
+        i{
+          color: orange;
+          margin: 0 5px;
+        }
+      }
+      span:nth-child(2){
+        border-right:1px solid $borderColor;
+        border-left:1px solid $borderColor;
+      }
+    }
+    .goods_info_kind{
+      height: 52px;
+      margin: 50px 0 50px;
+      .select_kinds{
+        vertical-align: top;
+        color: $goodsColor;
+        line-height: 50px;
+        height: 50px;
+        display: inline-block;
+      }
+      .suoluetu{
+        width: 50px;
+        height: 50px;
+        border:1px solid $borderColor;
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .suoluetu1{
+        background: url("../images/goods_detail/suoluetu-1.png") no-repeat center center;
+      }
+      .suoluetu2{
+        background: url("../images/goods_detail/suoluetu-2.png") no-repeat center center;
+      }
+    }
+    .goods_info_number{
+      margin: 50px 0 30px;
+      color: $goodsColor;
+      .select_kinds{
+        float: left;
+      }
+      .number_position{
+        float: left;
+        position: relative;
+        width: 90px;
+        height: 30px;
+        input{
+          width: 50px;
+          height: 30px;
+          line-height: 30px;
+          margin-left: 20px;
+        }
+        span{
+          position: absolute;
+          right:0;
+          width: 10px;
+          height:10px;
+          text-align: center;
+          line-height: 10px;
+          border:1px solid $borderColor;
+        }
+        .goods_number_plus{
+          top: 2px;
+        }
+        .goods_number_increase{
+          bottom: 0;
+        }
+      }
+
+    }
+    .goods_buy_button{
+      width: 100%;
+      height: 42px;
+      clear: both;
+
+      .goods_buy_now,
+      .goods_add_to_cart{
+        border-radius: 3px;
+        display: inline-block;
+        margin: 40px 0 0 ;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        text-decoration: none;
+        color: $goodsColor;
+        border:2px solid $fontColor;
+        &:hover{
+          color: #fff;
+          background: $fontColor;
+        }
+        i{
+          margin-right: 10px;
+        }
+      }
+      .goods_buy_now{
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+
+.goods_info_detail{
+  margin-top: 50px;
+  width:100%;
+  .goods_info_tab{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    span{
+      cursor: pointer;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      margin: 0 10px;
+      &:hover{
+        border-top:2px solid $fontColor;
+      }
+    }
+    span.on{
+      border-top:2px solid $fontColor;
+    }
+  }
+}

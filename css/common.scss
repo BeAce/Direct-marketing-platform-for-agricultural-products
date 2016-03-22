@@ -1,0 +1,654 @@
+@import "variable.scss";
+*{
+  margin: 0;
+  padding: 0;}
+body {
+  font-family: $fontFamily;
+}
+.global_layout {
+  width: $globalWidth;
+  margin: 0 auto;
+}
+#top {
+  width: 100%;
+  height: $topHeight;
+  background-color: $topBackground;
+
+  .greeting {
+    float: left;
+    height: $topHeight;
+    font-size: $fontSize;
+    line-height: $topHeight;
+    color: #666;
+  }
+  .operation {
+    float: right;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      height: $topHeight;
+      line-height: $topHeight;
+      font-size: $fontSize;
+      color: #666;
+    }
+    i {
+      margin: 0 5px;
+    }
+  }
+
+}
+
+
+.logobar{
+  height: 100px;
+  //border: 1px solid #ff7f3f;
+  .logo{
+    width: 183px;
+    height: 100px;
+    background: url("../images/logo.png") no-repeat center center;
+    float: left;
+  }
+  #province{
+    display: block;
+    float: left;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin: 40px 0 0 60px;
+  }
+  .searchbar{
+    float: left;
+    margin-left: 100px;
+    width: 500px;
+    height: 32px;
+    margin-top: 40px;
+    position:relative;
+    .search_input{
+      width: 400px;
+      height: 30px;
+      border: 1px solid #ddd;
+      text-indent: 10px;
+      font-size: 14px;
+    }
+    .search_btn{
+      display: inline-block;
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background-color: #2FA94C;
+      color: #fff;
+      outline: none;
+      border: 1px solid #2FA94C;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 400px;
+    }
+  }
+}
+
+.banner {
+  //margin-top: 50px;
+  width: $defaultWidth;
+  height: $bannerHeight;
+  position: relative;
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    a{
+      width: $defaultWidth;
+      height: $bannerHeight;
+      overflow: hidden;
+      position: absolute;
+      img{
+        width: $defaultWidth;
+        height: $bannerHeight;
+      }
+    }
+  }
+  .dots{
+    position: absolute;
+  }
+  .angle_left ,
+  .angle_right {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 10px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+  }
+  .angle_left{
+    left: 0;
+  }
+  .angle_right{
+    right: 0;
+  }
+}
+.align_nav_bar{
+  border-bottom: 3px solid $fontColor;
+}
+.align_nav {
+  height: 40px;
+  ul li{
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+    a {
+      display: block;
+      color: #333;
+      margin: 0 20px;
+      height: 40px;
+      line-height: 40px;
+      text-decoration: none;
+      font-family: $fontFamily;
+    }
+    .all_goods{
+      margin-left: 0;
+      width: 150px;
+      height: 40px;
+      background: #0B9245;
+      line-height: 40px;
+      color: #fff;
+      text-align: center;
+      i {
+        color: #fff;
+      }
+    }
+    a.on{
+      color: #0B9245;
+      font-weight: bold;
+    }
+  }
+}
+.ver_nav{
+  clear: both;
+  ul {
+    display: block;
+    width: 150px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .9);
+    position: relative;
+    z-index: 2;
+  }
+  ul li{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    color:#333;
+    text-align: center;
+    border-bottom: $borderColor;
+    a{
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      width: 150px;
+      color:#333;
+      text-align: center;
+      border-bottom: $borderColor;
+      text-decoration: none;
+      font-family: $fontFamily;
+      i{
+        margin:0 10px 0 -10px;
+        color: orange;
+      }
+    }
+  }
+}
+
+//促销区域
+.promotion{
+  height: 142px;
+  margin-top: 10px;
+  ul li{
+    width: 368px;
+    height: 140px;
+    border: 1px solid $borderColor;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    .promotion_text{
+      padding: 20px 20px;
+      float: left;
+      .promotion_price {
+        span.price{
+          color: orange;
+        }
+      }
+      .promotion_title{
+        margin: 10px 0;
+      }
+      .promotion_intro{
+        color: orange;
+      }
+    }
+    .promotion_img{
+      float: right;
+      img{
+        width: 158px;
+        height: 140px;
+      }
+    }
+  }
+
+}
+
+
+//分类 品牌区域
+.depart_line {
+  position: relative;
+  margin-top: 30px;
+  height: 60px;
+  .category{
+    width: 150px;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    left: 50%;
+    margin-left: -75px;
+    color: #0B9245;
+    background: #fff;
+    .category_cn{
+      font-weight: bold;
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      display: block;
+    }
+    .category_en {
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      display: block;
+    }
+  }
+  .more_goods {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #0B9245;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .depart_hr{
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    border: 1px solid #0B9245;
+  }
+}
+//品牌
+.brand{
+  margin-top: 10px;
+  height: 200px;
+  .brand_img {
+    width: 361px;
+    height: 196px;
+    float: left;
+  }
+  .brand_list{
+    float:right;
+    width: 770px;
+    li{
+      list-style: none;
+      display: block;
+      float: left;
+      margin: 10px 10px;
+      img{
+        width: 90px;
+        height: 79px;
+      }
+    }
+  }
+}
+//精品水果
+.boutique_fruit {
+  clear:both;
+  margin-top: 30px;
+  .boutique_title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid $fontColor;
+    font-size: 20px;
+    margin-bottom: 30px;
+    .boutique_name_cn {
+      color: $fontColor;
+      float: left;
+      font-weight: bold;
+    }
+    .boutique_name_en{
+      font-weight: normal;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+    .boutique_list {
+      float: right;
+      span,a {
+        color: #cccccc;
+        margin: 0 5px;
+        font-size: $fontSize;
+        text-decoration: none;
+      }
+      a{
+        &:hover{
+          @include aHover;
+        }
+      }
+    }
+  }
+  .boutique_display{
+    width: 100%;
+    .boutique_poster{
+      width: 250px;
+      height: 400px;
+      border: 1px solid $borderColor;
+      float: left;
+    }
+    .boutique_content{
+      width: 886px;
+      float: left;
+      height: 400px;
+      border: 1px solid $borderColor;
+      .boutique_content_common{
+        width: 100%;
+        height: 200px;
+        .boutique_goods{
+          width: 200px;
+          padding: 20px 20px;
+          height: 158px;
+          float: left;
+          position: relative;
+          border: 1px solid $borderColor;
+          .boutique_goods_text{
+            width: 100%;
+            h4{
+
+              font-size: 20px;
+            }
+            p{
+              margin: 10px 0;
+              font-size: 15px;
+            }
+            p.boutique_goods_price{
+              color: orange;
+              font-size: 18px;
+              font-style: italic;
+            }
+          }
+          .boutique_goods_img{
+            width: 130px;//need var
+            height: 115px;
+            background:#058;
+            //padding-left: 20px;
+            background: url("../images/milk.jpg") no-repeat center bottom;
+            border: 0;
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+          }
+        }
+
+      }
+      .boutique_content_1{
+        .boutique_goods:last-child{
+          width: 360px;
+          .boutique_goods_img{
+            width: 250px;
+            height: 140px;
+            padding: 0;
+          }
+        }
+      }
+      .boutique_content_2{
+        .boutique_goods:first-child{
+          width: 360px;
+          .boutique_goods_img{
+            width: 250px;
+            height: 140px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.faith{
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  background: $borderColor;
+  padding-top: 30px;
+  ul li{
+    width: 25%;
+    list-style: none;
+    float: left;
+    .faith_icon{
+      float: left;
+      width: 50px;
+      font-size: 50px;
+      color: #1B8048;
+      span{
+        padding-left: 12px;
+      }
+    }
+    .faith_intro{
+      float: left;
+      padding: 14px 0 0 34px;
+      .faith_title{
+        color: $fontColor;
+      }
+    }
+  }
+}
+
+#footer{
+  width: 100%;
+  background: #1B8048;
+  height: 300px;
+  //text-align: center;
+  dl{
+    display: block;
+    float: left;
+    width: 20%;
+    color: #fff;
+    padding-top: 40px;
+    //margin: 0 2.5%;
+    dt{
+      font-size: 14px;
+    }
+    dd{
+      a{
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+          @include aHover;
+        }
+      }
+      font-size: 12px;
+      line-height: 20px;
+      margin: 10px 0;
+    }
+  }
+  .footer_link{
+    a{
+      color: #0A5929;
+      text-decoration: none;
+      &:hover{
+        @include aHover;
+      }
+    }
+    span{
+      margin: 0 10px;
+    }
+  }
+  p{
+    color: #0A5929;
+    text-align: center;
+    margin: 10px 0;
+    font-size: $fontSize;
+  }
+}
+
+
+
+
+//login.html start
+.login_bar{
+  //border: 1px solid red;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  margin: -250px auto 0;
+}
+.login_text{
+  color: $fontColor;
+  width:420px;
+  height: 120px;
+  float: left;
+  //border: 1px solid red;
+  text-align: center;
+  margin-top: 140px;
+  padding-top: 50px;
+  p{
+    margin : 10px 0 ;
+    img{
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+  p.login_text_nice{
+    font-size: 20px;
+    font-weight: bold;
+    span{
+      font-size: 16px;
+      margin-left: 10px;
+      font-weight: normal;
+    }
+  }
+}
+.login_form{
+  text-align: center;
+  width:400px;
+  height: 500px;
+  float: right;
+  margin-right: 100px;
+  position: relative;
+}
+
+.login_logo{
+  padding-top: 40px;
+}
+#login_form{
+  margin-top: 10px;
+  width:400px;
+  height: 350px;
+  border-top: 3px solid $fontColor;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  .login_tag{
+    //border-top: 2px solid $fontColor;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    span{
+      float: left;
+      //display: inline-block;
+      width: 50%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+
+    }
+    span.on{
+      border-bottom: 3px solid orange;
+    }
+    span.out{
+      color: #ccc;
+    }
+  }
+  input[type="text"]{
+    margin: 30px auto;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border:0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    display: block;
+    //margin-top: 20px;
+  }
+  input[type="button"]{
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color:#fff;
+    background-color: $fontColor;
+    text-align: center;
+    border: 1px solid $fontColor;
+    margin: 40px auto 0;
+    border-radius: 5px;
+    //margin-top: 30px;
+  }
+
+  label{
+    font-size: $fontSize;
+  }
+  a{
+    text-decoration: none;
+    font-size: 14px;
+    color: $fontColor;
+    //text-align: right;
+    margin-left: 50px;
+  }
+}
+.decoration{
+  position: absolute;
+}
+.decoration_1{
+  left: 0;
+  top: 50%;
+}
+.decoration_2{
+  top: 0;
+  left: 20%;
+}
+.decoration_3{
+  right: 0;
+  top: 30%;
+}
+.decoration_5{
+  left: -77px;
+  //top: 90%;
+  bottom: 20px;
+}
+.decoration_4{
+  right: -124px;
+  //top: 0%;
+  bottom: 30px;
+}

@@ -1,0 +1,16 @@
+//init variable
+$topBackground : #f4f4f4;
+$topHeight : 30px;
+$globalWidth : 1140px;
+$fontSize:12px;
+$fontFamily:"Microsoft YaHei";
+$bannerHeight : 300px;
+$defaultWidth : 100%;
+$fontColor : #0B9245;
+$borderColor : #ccc;
+$bgColor : #F5F7F6;
+$goodsColor: #666;
+@mixin aHover{
+  text-decoration: underline;
+  //color: $fontColor;
+}

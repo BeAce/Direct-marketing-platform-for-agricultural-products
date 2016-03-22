@@ -1,0 +1,201 @@
+.nav_bread {
+  margin-top: 20px; }
+  .nav_bread a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 14px; }
+    .nav_bread a:hover {
+      text-decoration: underline; }
+  .nav_bread span {
+    font-size: 14px;
+    color: #c4c4c4; }
+  .nav_bread .active {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333; }
+
+.nav_left {
+  width: 195px;
+  float: left; }
+  .nav_left h4 {
+    color: #0B9245;
+    line-height: 40px; }
+    .nav_left h4 span {
+      margin-left: 10px;
+      font-size: 14px;
+      color: #c4c4c4; }
+  .nav_left ul li {
+    display: block;
+    width: 100%;
+    list-style: none; }
+    .nav_left ul li dl dd, .nav_left ul li dl dt {
+      display: block; }
+    .nav_left ul li dl dt {
+      background: #0B9245;
+      height: 30px;
+      width: 100%;
+      line-height: 30px;
+      color: #fff;
+      padding: 5px 0;
+      font-size: 14px;
+      cursor: pointer; }
+      .nav_left ul li dl dt i {
+        font-size: 16px;
+        margin: 0 10px; }
+      .nav_left ul li dl dt span {
+        color: #fff;
+        font-size: 14px;
+        margin-left: 20px; }
+    .nav_left ul li dl dd {
+      display: none; }
+      .nav_left ul li dl dd a {
+        display: block;
+        text-indent: 20px;
+        margin: 10px 0;
+        color: #ccc;
+        font-size: 14px;
+        text-decoration: none; }
+        .nav_left ul li dl dd a:hover {
+          color: #0B9245; }
+        .nav_left ul li dl dd a:hover span {
+          color: #0B9245; }
+      .nav_left ul li dl dd span {
+        color: #c4c4c4;
+        font-size: 14px;
+        margin-left: 20px; }
+    .nav_left ul li dl.show dd {
+      display: block; }
+    .nav_left ul li dl dd.hide {
+      display: none; }
+  .nav_left img {
+    margin: 10px auto; }
+
+.content_right {
+  float: left;
+  width: 945px; }
+  .content_right .category_banner {
+    width: 945px;
+    height: 269px; }
+  .content_right .goods_filter {
+    width: 100%;
+    border-right: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    font-size: 14px; }
+    .content_right .goods_filter .including {
+      line-height: 40px;
+      padding-left: 20px; }
+    .content_right .goods_filter .goods_condition {
+      width: 100%;
+      background: #F5F7F6;
+      height: 40px;
+      position: relative; }
+      .content_right .goods_filter .goods_condition .condition_tip {
+        top: 10px;
+        right: 20px;
+        position: absolute;
+        color: #333;
+        text-decoration: none;
+        font-size: 12px; }
+    .content_right .goods_filter .goods_brands {
+      width: 100%;
+      padding: 20px 0;
+      border-bottom: 1px solid #c4c4c4; }
+      .content_right .goods_filter .goods_brands input {
+        margin: 0 0 10px 15px; }
+    .content_right .goods_filter .goods_price {
+      width: 100%;
+      border-bottom: 1px solid #c4c4c4; }
+      .content_right .goods_filter .goods_price span {
+        margin-right: 10px; }
+      .content_right .goods_filter .goods_price form.goods_price_section {
+        float: right;
+        margin: 5px 0 0 30px;
+        display: inline-block;
+        width: 200px; }
+        .content_right .goods_filter .goods_price form.goods_price_section input {
+          width: 50px;
+          height: 20px;
+          line-height: 20px;
+          display: inline-block;
+          font-size: 12px; }
+    .content_right .goods_filter .goods_categories {
+      width: 100%;
+      border-bottom: 1px solid #c4c4c4; }
+      .content_right .goods_filter .goods_categories span {
+        margin-right: 10px; }
+      .content_right .goods_filter .goods_categories input {
+        margin-right: 10px; }
+      .content_right .goods_filter .goods_categories .more_goods {
+        float: right;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px; }
+    .content_right .goods_filter .more_goods_filter {
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px solid #c4c4c4; }
+    .content_right .goods_filter .click_filter {
+      border-bottom: 1px solid #c4c4c4;
+      background: #F5F7F6; }
+      .content_right .goods_filter .click_filter span {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        margin: 0 20px; }
+        .content_right .goods_filter .click_filter span i {
+          margin-left: 10px; }
+      .content_right .goods_filter .click_filter input {
+        margin: 0 20px; }
+  .content_right .goods_display {
+    margin: 30px 0 0 0; }
+    .content_right .goods_display .goods_item {
+      float: left;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      width: 200px;
+      margin: 0 16.34px 10px 0;
+      padding: 10px 10px; }
+      .content_right .goods_display .goods_item:hover {
+        border: 2px solid #0B9245;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in; }
+      .content_right .goods_display .goods_item .goods_img_bar {
+        width: 100%;
+        height: 196px;
+        text-align: center; }
+        .content_right .goods_display .goods_item .goods_img_bar .goods_img {
+          width: 96px;
+          height: 196px; }
+      .content_right .goods_display .goods_item p {
+        line-height: 25px; }
+      .content_right .goods_display .goods_item .goods_name {
+        font-size: 14px;
+        color: #a2a2a2; }
+      .content_right .goods_display .goods_item .price_ago {
+        color: #ccc;
+        text-decoration: line-through; }
+      .content_right .goods_display .goods_item .price_now {
+        color: orange;
+        font-size: 18px;
+        font-style: italic;
+        height: 40px;
+        line-height: 40px; }
+        .content_right .goods_display .goods_item .price_now i {
+          float: right;
+          color: #fff;
+          cursor: pointer;
+          background-color: #0B9245;
+          text-align: center;
+          font-size: 30px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%; }
+    .content_right .goods_display .goods_item:nth-child(4n) {
+      margin-right: 0; }
+
+/*# sourceMappingURL=category.css.map */
