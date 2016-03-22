@@ -1,6 +1,15 @@
- #Direct marketing platform for agricultural products
+#Direct marketing platform for agricultural products
+##农产品直销平台网页模版
+<hr/>
+####初衷
+>由于之前想拿这个创业来着，结果网页做到一半由于一些特殊的原因停止了。索性拿出来分享当作模版。此网站的设计，是是用的千图网的免费素材，如果有侵权问题，请与我联系。
+
 ###预览
-![Mou icon](http://25.io/mou/Mou_128.png)
+<hr/>
+[首页](https://github.com/BeAce/Direct-marketing-platform-for-agricultural-products/blob/master/images/view/index.png)
+[分类页](https://github.com/BeAce/Direct-marketing-platform-for-agricultural-products/blob/master/images/view/index.png)
+[详情页](https://github.com/BeAce/Direct-marketing-platform-for-agricultural-products/blob/master/images/view/index.png)
+[登录页](https://github.com/BeAce/Direct-marketing-platform-for-agricultural-products/blob/master/images/view/index.png)
 
 ###项目目录结构
 <hr/>
